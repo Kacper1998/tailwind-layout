@@ -1,0 +1,64 @@
+.firstsection {
+  background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url(../SellAce/img/bg-masthead.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+}
+@media screen and (max-width: 1200px) {
+  .firstsection {
+    height: 50%;
+  }
+}
+.img-bg {
+  height: auto;
+  width: 100%;
+  display: none;
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%)
+}
+
+.orangediv {
+  height: 55vh;
+}
+.whitediv {
+  border: 1px solid #f8fafc;
+  height: 60vh;
+}
+.greydiv {
+  height: 42vh;
+}
+.formdiv {
+  height: 122vh;
+}
+
+.container-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+.item{
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+}  
+img{
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+} 
+img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+.navigation {
+  width: 100vw;
+  position: sticky;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: orangered !important;
+  transition: background-color 200ms linear;
+}

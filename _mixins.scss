@@ -1,0 +1,11 @@
+@mixin card {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+@mixin text-1 {
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+}
